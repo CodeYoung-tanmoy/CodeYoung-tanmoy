@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CodeYoung 2.0</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        body{
+            background-image: url("https://images.unsplash.com/photo-1426900985728-92d56f56fdb2?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MXwxfDB8MXxyYW5kb218fHx8fHx8fA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600");
+            background-size: cover;
+        }
+        .top-nav{
+            background-color: rgb(27, 3, 3);
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .top-nav a{
+            color: cornsilk;
+            font-family: calibri;
+            text-decoration: none;
+            padding-right: 10px;
+            padding-left: 10px;
+            font-size: 20px;
+        }
+        .top-nav a:hover{
+            background-color:rgb(207, 183, 183) ;
+            color: rgb(26, 3, 3);
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        footer{
+            background-color: rgb(2, 2, 44);
+            color: wheat;
+            font-family: calibri;
+            font-size: 20px;
+            text-align: center;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            position: fixed;
+            bottom: 0px;
+            width: 100%;
+        }
+        .patch-1{
+            width: 60%;
+            padding: 60px;
+            background-color: rgb(1, 1, 29);
+            position: fixed;
+            left: -65%;
+            top: 15%;
+            transition: 0.8s ease-in-out;
+            animation-name: patch-1;
+            animation-duration: 0.5s;
+            animation-timing-function: ease-in;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+            animation-delay: 2s;
+            opacity: 0;
+        }
+        @keyframes patch-1 {
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+        .patch-1:hover{
+            left: 0%;
+            background-color: rgba(1, 1, 29, 0.6);
+        }
+        .patch-1 h1{
+            font-family: calibri;
+            font-size: 40px;
+            color: burlywood;
+        }
+        .patch-1 p{
+            font-family: calibri;
+            font-size: 25px;
+            color: cornsilk;
+        }
+        .patch-3{
+            width: 60%;
+            padding: 60px;
+            background-color: rgb(5, 20, 1);
+            position: fixed;
+            right: -65%;
+            top: 15%;
+            transition: 0.8s ease-in-out;
+            animation-name: patch-3;
+            animation-duration: 0.5s;
+            animation-timing-function: ease-in;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+            animation-delay: 3s;
+            opacity: 0;
+        }
+        @keyframes patch-3 {
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+        .patch-3:hover{
+            right: 0%;
+            background-color: rgba(5, 20, 1, 0.6);
+        }
+        .patch-3 h1{
+            font-family: calibri;
+            font-size: 40px;
+            color: burlywood;
+        }
+        .patch-3 p{
+            font-family: calibri;
+            font-size: 25px;
+            color: cornsilk;
+        }
+        .patch-2{
+            width: 60%;
+            padding: 60px;
+            background-color: rgba(19, 2, 7, 0.6);
+            position: fixed;
+            left: 15%;
+            top: 48%;
+            transition: 0.2s ease-in;
+            border: 1px solid whitesmoke;
+            animation-name: patch-2;
+            animation-duration: 0.5s;
+            animation-timing-function: ease-in;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+            animation-delay: 4s;
+            opacity: 0;
+        }
+        @keyframes patch-2 {
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+        .patch-2:hover{
+            background-color: rgba(19, 2, 7, 0.8);
+            box-shadow: 1px 1px 1px whitesmoke;
+        }
+        .patch-2 p{
+            color: whitesmoke;
+            font-size: 25px;
+            font-family: calibri;
+        }
+        #btn-1{
+            padding-left: 60px;
+            padding-right: 60px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            font-size: 25px;
+            font-family: calibri;
+            background-color: rgba(220, 20, 20, 0);
+            color: white;
+            border: 2px solid white;
+            position: fixed;
+            left: 42%;
+            top: 86%;
+            transition: 1s ease-in;
+            animation-name: btn-1;
+            animation-duration: 0.5s;
+            animation-timing-function: ease-in;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+            animation-delay: 5s;
+            opacity: 0;
+        }
+        @keyframes btn-1 {
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+        #btn-1:hover{
+            background-color: rgba(220, 20, 20, 0.6);  
+            transform: rotateY(360deg);         
+        }
+        #wel{
+            font-size: 110px;
+            position: fixed;
+            color: rgb(0, 0, 26);
+            font-family: calibri;
+            left: 25%;
+            top: 10%;
+            animation-name:wel;
+            animation-duration: 0.5s;
+            animation-timing-function: ease-in;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+            animation-delay: 1s;
+            opacity: 0;
+        }
+        @keyframes wel {
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!--
+        This project is about an organisation that is run by Lavisha,Jeetansh and Siddhant for teaching students.
+    -->
+    <div class="top-nav">
+        <a href="file:///C:/Users/TANMOY/Desktop/Smaowl/13%20Oct/class-28.html#" id="home">Home</a>
+        <a href="file:///C:/Users/TANMOY/Desktop/Smaowl/13%20Oct/class-28(about).html" id="about">About</a>         <!--Siddhant-->
+        <a href="file:///C:/Users/TANMOY/Desktop/Smaowl/13%20Oct/class-28(contact).html" id="contact">Contact</a>     <!--Jeetansh-->
+        <a href="file:///C:/Users/TANMOY/Desktop/Smaowl/13%20Oct/class-28(projects).html" id="projects">Projects</a>   <!--Lavisha-->
+    </div>
+    <h1 id="wel">
+        HAPPY CODING
+    </h1>
+    <div class="patch-1">
+        <h1>Welcome</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident quos sunt quae, vero rerum accusamus labore facilis non ex eum?</p>
+    </div>
+    <div class="patch-2">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis laboriosam neque illo accusamus ratione, perferendis voluptas cumque ex qui ipsam veniam nihil possimus non, accusantium doloribus? Debitis illo, in consequatur incidunt maiores obcaecati culpa accusantium quaerat pariatur, unde omnis sint!</p>
+    </div>
+    <div class="patch-3">
+        <h1>Welcome</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident quos sunt quae, vero rerum accusamus labore facilis non ex eum?</p>
+    </div>
+    <button id="btn-1">
+        Read More
+    </button>
+    <footer>
+        Copyright &copy; CodeYoung students | All Rights Reserved | Terms & Conditions
+    </footer>
+</body>
+</html>
